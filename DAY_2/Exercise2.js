@@ -45,7 +45,11 @@ const newNumber = Math.floor(Math.random () * 256);
 console.log(newNumber);
 
 // 10. Access the 'JavaScript' string characters using a random number.
+const str = "JavaScript";
+const randomIndex = Math.floor(Math.random() * 10);
+const randomChar = str[randomIndex];
 
+console.log(`Random character: ${randomChar}`);
 
 /* 11. Use console.log() and escape characters to print the following pattern.
 1 1 1 1 1
@@ -60,7 +64,7 @@ console.log("3\t1\t3\t9\t27");
 console.log("4\t1\t4\t16\t64");
 console.log("5\t1\t5\t25\t125");
 
-// Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
+//12. Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
 let statement = "You cannot end a sentence with because because because is a conjunction";
 console.log(statement.indexOf('because'));
 console.log(statement.lastIndexOf('because'));
