@@ -1,4 +1,4 @@
-// 1. Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.
+// Q1. Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.
 let firstName = 'Swapnajit';
 let lastName = 'Swain';
 let country = 'India';
@@ -15,13 +15,13 @@ console.log("age:", typeof age);
 console.log("isMarried:", typeof isMarried);
 console.log("year:", typeof year);
 
-// 2. Check if type of '10' is equal to 10.
+// Q2. Check if type of '10' is equal to 10.
 console.log(typeof('10')=== 10);
 
-// 3. Check if parseInt('9.8') is equal to 10.
+// Q3. Check if parseInt('9.8') is equal to 10.
 console.log(parseInt('9.8')=== 10);
 
-// 4.Boolean value is either true or false.
+// Q4.Boolean value is either true or false.
  // i. Write three JavaScript statement which provide truthy value.  
 console.log(Boolean(42));          
 console.log(Boolean("hello"));     
@@ -31,7 +31,7 @@ console.log(Boolean(0));
 console.log(Boolean(""));       
 console.log(Boolean(null));  
 
-// 5. Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()   
+// Q5. Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()   
 //  i. 4 > 3
 console.log(4>3);
 // ii. 4 >= 3
@@ -63,7 +63,7 @@ console.log( word2.length);
 
 console.log(word1.length !== word2.length);
 
-// 6. Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
+// Q6. Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
 //  i. 4 > 3 && 10 < 12
 console.log(4 > 3 && 10 < 12);
 // ii. 4 > 3 && 10 > 12
@@ -92,7 +92,7 @@ console.log(str2.includes('on'));
 
 console.log(!(str1.includes("on") && str2.includes("on"))); 
 
-// 7. Use the Date object to do the following activities
+// Q7. Use the Date object to do the following activities
 // i. What is the year today?
 const crYear = new Date();
 console.log(crYear.getFullYear());
