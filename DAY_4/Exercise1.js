@@ -4,7 +4,7 @@ You are old enough to drive.
 Enter your age:15
 You are left with 3 years to drive.*/
 
-let age = prompt("Enter your age:");
+let age = Number(prompt("Enter your age:"));
 let wait = 18 - age;
 if (age >= 18) {
   alert(`You are old enough to drive`);
@@ -16,7 +16,7 @@ if (age >= 18) {
 /* Enter your age: 30
 You are 5 years older than me.*/
 
-yourAge = prompt("Enter your age:");
+yourAge = Number(prompt("Enter your age:"));
 let myAge = 23;
 if (yourAge > myAge){
  console.log(`You are ${yourAge - myAge} year(s) older than me.`);
@@ -47,7 +47,7 @@ if (yourAge > myAge){
 
 //  Q4. Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript?
 let number;
-number = prompt("Enter a number:");
+number = Number(prompt("Enter a number:"));
 if (number % 2 === 0) {
   console.log("The number is even.");
 }else{
