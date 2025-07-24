@@ -29,15 +29,19 @@ console.log(itCompanies[0], itCompanies[3], itCompanies[6]);
 // Q10.Print out each company.
 
 // Q11. Change each company name to uppercase one by one and print them out
-let  index1 = itCompanies[0].toUpperCase();
+/*let  index1 = itCompanies[0].toUpperCase();
 let  index2 = itCompanies[1].toUpperCase();
 let  index3 = itCompanies[2].toUpperCase();
 let  index4 = itCompanies[3].toUpperCase();
 let  index5 = itCompanies[4].toUpperCase();
 let  index6 = itCompanies[5].toUpperCase();
 let  index7 = itCompanies[6].toUpperCase();
-console.log(index1,index2,index3,index4,index5,index6,index7);
-
+console.log(index1,index2,index3,index4,index5,index6,index7);*/
+const newArr = [];
+for(let i = 0; i < itCompanies.length; i++){
+  newArr.push(itCompanies[i].toUpperCase())
+}
+console.log(newArr);
 // Q12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
 const sentence = itCompanies.slice(0, 5).join(", ") + " and " + itCompanies.slice(-1) + " are big IT companies.";
 console.log(sentence);
