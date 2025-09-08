@@ -187,7 +187,65 @@ const statistics =  new Statistics(ages)
 statistics.describe();
 
 
+// Q2. Create a class called PersonAccount. It has firstname, lastname, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
 
 
-// const soting = ages.sort((a, b) => a - b);
-// console.log(soting);
+class PersonAccount {
+    constructor (firstname, lastname)  
+    {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.incomes = new Set();
+        this.expenses = new Set();
+    }
+    addIncome(amount, description) 
+    {
+        this.incomes.add ({amount, description});
+    }
+    addExpense(amount, description) 
+    {
+        this.expenses.add ({amount, description});
+    }
+    totalIncome() 
+    {
+     let total = 0;
+     this.incomes.forEach((income) => {
+        total = total + income.amount 
+     });
+     return total;
+    }
+     totalExpense() 
+     {
+     let total = 0;
+     this.expenses.forEach((expense) => {
+        total = total + expense.amount
+     });
+     return total;
+    }
+    accountBalance() 
+    {
+        const totalBAlance = this.totalIncome() - this.totalExpense();
+        return totalBAlance;
+    }
+    accountInfo() 
+    {
+        const information =  `
+       Account Holder : ${this.firstname} ${this.lastname}
+       Total Income : ${this.totalIncome()}
+       Total Expense : ${this.totalExpense()}
+       Account Balance : ${this.accountBalance()}`
+        return information;
+    }
+}
+
+
+
+const person = new PersonAccount("Lidiya", "Tekle");
+person.addIncome(17000, "Salary");
+person.addIncome(15000, "Bussiness");
+person.addExpense(10000, "Rent");
+person.addExpense(7000, "Other");
+
+
+console.log(person.accountInfo());
+
