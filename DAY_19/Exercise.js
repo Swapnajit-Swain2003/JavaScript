@@ -4,7 +4,7 @@
 // Q1. Create a closure which has one inner function.
 
 function closure() {
-    let name = "Asabeneh";
+    let name = 'Asabeneh';
 
     function displayName() {
         console.log(name);
@@ -25,12 +25,10 @@ function updation() {
 
     function increment() {
         number = number + 1;
-        // number++;
-        return number;
+        number++;
     }
     function decrement() {
-        number = number - 1;
-        // number--;
+        number--;
         return number;
     }
     function reset() {
