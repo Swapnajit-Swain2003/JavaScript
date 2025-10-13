@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="Assignment1.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>User Registration Form</h2>
+        <form id="registrationForm">
+            <!-- Full Name -->
+            <label for="fullName">Full Name</label>
+            <input type="text" placeholder="Enter Full Name." id="fullName" minlength="3" maxlength="64" required>
+            <span class="error" id="errorFullName"></span>
+
+            <!-- Email Address -->
+            <label for="email">Email Address</label>
+            <input type="email" placeholder="Enter Email Address." id="email" required>
+            <span class="error" id="errorEmail"></span>
+
+            <!-- Date Of Birth -->
+            <label for="dob">Date Of Birth</label>
+            <input type="date" id="dob">
+            <span class="error" id="errorDob"></span>
+
+            <!-- Phone Numbers -->
+            <label>Phone Numbers</label>
+            <div id="phoneNumbers">
+                <div class="phone-row">
+                    <input type="tel" class="phoneNumber" placeholder="Enter 10-digit Phone Number." maxlength="10"
+                        pattern="\d*" required>
+                    <button type="button" id="addPhone">+</button>
+                </div>
+            </div>
+            <span class="error" id="errorPhone"></span>
+
+            <!-- Address -->
+            <label for="address">Address</label>
+            <textarea id="address" placeholder="Enter Address" rows="3" required></textarea>
+            <span class="error" id="errorAddress"></span>
+
+            <!-- Country  -->
+            <div class="select">
+                <select id="country" required>
+                    <option value="">Country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                </select>
+
+                <!-- State  -->
+                <select id="state" required>
+                    <option value="">State</option>
+                </select>
+                <!-- Zip -->
+                <input type="text" id="zip" maxlength="6" placeholder="Zip" pattern="\d*" required />
+            </div>
+            <span class="error" id="errorZip"></span>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button type="reset" id="resetButton">Reset</button>
+                <button type="submit" id="saveButton">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- User Table -->
+    <div class="users-table">
+        <h3>Registered Users:</h3>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>DOB</th>
+                    <th>Phone Numbers</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="Assignment1.js"></script>
+</body>
+
+</html>
