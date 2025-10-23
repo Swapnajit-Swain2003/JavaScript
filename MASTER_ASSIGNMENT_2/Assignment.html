@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER REGISTRATION FORM</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Assignment.css">
+
+    <!-- Toastr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>User Registration Form</h2>
+        <form id="registrationForm" autocomplete="off">
+            <!-- Full Name -->
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter Full Name." id="fullName" minlength="3" maxlength="64">
+            <span class="error" id="errorFullName"></span>
+
+            <!-- Email Address -->
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter Email Address." id="email">
+            <span class="error" id="errorEmail"></span>
+
+            <!-- Date Of Birth (Optional) -->
+            <label>Date Of Birth</label>
+            <input type="date" id="dob">
+            <span class="error" id="errorDob"></span>
+
+            <!-- Phone Numbers -->
+            <label>Phone Number</label>
+            <div id="phoneNumbers">
+                <div class="phone-field">
+                    <input type="tel" class="phoneNumber" placeholder="Enter 10 digit Phone Number." maxlength="10">
+                    <button type="button" id="addPhone">+</button>
+                </div>
+            </div>
+            <span class="error" id="errorPhone"></span>
+
+            <!-- Address -->
+            <label>Address</label>
+            <textarea id="address" placeholder="Enter Your Address." rows="4"></textarea>
+            <span class="error" id="errorAddress"></span>
+
+            <!-- Country, State, Zip -->
+            <div class="select">
+                <select id="country">
+                    <option value="">Country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                </select>
+                <select id="state">
+                    <option value="">State</option>
+                </select>
+                <input type="text" id="zip" maxlength="6" placeholder="Zip">
+            </div>
+            <span class="error" id="errorZip"></span>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button type="reset" id="resetButton">Reset</button>
+                <button type="submit" id="submitButton">Save</button>
+            </div>
+        </form>
+    </div>
+    <div class="users-table">
+        <div class="table-actions">
+            <h3>Registered Users</h3>
+            <button id="deleteSelected">Delete Selected</button>
+        </div>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Full Name</th>
+                    <th>Email Address</th>
+                    <th>DOB</th>
+                    <th>Phone Numbers</th>
+                    <th>Address</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
+    <script src="Assignment.js"></script>
+</body>
+
+</html>

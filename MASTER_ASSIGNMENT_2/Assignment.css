@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px;
+    font-family: sans-serif;
+    background-color: #f6f1f1;
+}
+
+/* --- Heading(h2) --- */
+h2 {
+    text-align: center;
+    font-size: 35px;
+    border-bottom: 4px solid #080808;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+/* --- Form Container --- */
+.container {
+    max-width: 1500px;
+    margin: 50px auto;
+    padding: 50px 150px;
+    background-color: #ddd1d1;
+    border: 4px solid #141414;
+    border-radius: 10px;
+}
+
+/* --- Labels --- */
+label {
+    display: block;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+/* --- Inputs, TextArea, Select --- */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 7px;
+    border: 2px solid #0b0b0b;
+    background-color: #fdfafa;
+    margin: 7px auto;
+    font-size: 17px;
+}
+
+/* --- TextArea --- */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    padding: 15px;
+}
+
+/* -- Select -- */
+.select {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+/* --- Phone Fields --- */
+.phone-field {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.phone-field input {
+    flex: 1;
+
+}
+
+.phone-field button {
+    height: 45px;
+    width: 45px;
+    margin: 5px 3px;
+    border: 2px solid #080808;
+    border-radius: 4px;
+    background-color: #e7eccf;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* --- Buttons --- */
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top: 35px;
+    padding-top: 10px;
+}
+
+#resetButton,
+#submitButton {
+    width: 150px;
+}
+
+button {
+    font-size: 25px;
+    font-weight: bolder;
+    border: 1.5px solid #040404;
+    border-radius: 9px;
+    padding: 10px 20px;
+    background-color: #7eeac8;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0fc0df;
+    color: #e4d5d5;
+}
+
+/* --- Errors --- */
+.error {
+    color: #e21010;
+    font-size: 17px;
+    font-style: oblique;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* --- Heading(h3)--- */
+h3 {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+/* --- User Table Data --- */
+.users-table {
+    max-width: 1590px;
+    box-sizing: border-box;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.table-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    padding-top: 5px;
+    border-bottom: 3.5px solid #070707;
+}
+
+#deleteSelected {
+    height: 50px;
+    width: 220px;
+    padding: 10px;
+}
+
+/* --- Table --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 4.5px solid #0b0b0b;
+}
+
+th,
+td {
+    border: 2.5px solid #0b0b0b;
+    text-align: center;
+    padding: 8px 10px;
+    background-color: #ece4e4;
+}
+
+thead,
+tbody {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #ddc1c1;
+    border: 4px solid #0b0b0b;
+}
